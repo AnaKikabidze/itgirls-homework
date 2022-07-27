@@ -5,9 +5,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<header> jfjjfjffjfjfjfj</header>
-<body>
- <h1>My homework Hunny Bunny</h1>   
-</body>
+<style>
+.header { 
+  flex: 0 0 content;
+    }
+    
+    .main  {
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+        justify-content: stretch;
+    }
+    .body { 
+        display: flex;
+        flex-flow: column;
+        min-height: 100vh;
+       
+    }
+      .main_section {
+        border: 1px solid red;
+     flex-grow: 1;
+     flex-direction: row;
+     align-items: center; 
+     flex-flow: wrap;
+     align-content: space-around;
+  
+    }
+    .aside {
+        width: 30vh;
+    }
+    .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: stretch;
+    }
+    .section1,
+    .section2,
+    .section3,
+    .section4  {
+    flex: 1;
+    }
+    .div {
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: space-around; 
+    }
+</style>
+    </head>
+<body  class="body">
+    <header class="header">
+        <h2> Флекс бокс</h2>
+    </header>
+    <main class="main">
+        <section class="main_section">
+            Главная секция 
+           <div class="div">
+            <p> P1 </p>
+            <p> p2 </p>
+            <p> p3 </p>
+        </div>
+        </section>
+        <aside class="aside">сбоку</aside>
+    </main>
+    <footer class="footer">
+        <section class="section1">Футер секция 1</section>
+        <section class="section2">Футер секция 2</section>
+        <section class="section3">Футер секция 3</section>
+        <section class="section4">Футер секция 4</section>
+    </footer>
+
+</>
 </html>
