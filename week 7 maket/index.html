@@ -11,6 +11,7 @@
             border: 1px solid black;
        display: grid;
        grid-template-columns: 1fr 1fr 1fr 1fr; 
+
         }
         
       .div_1{
@@ -21,10 +22,14 @@ flex-direction: column;
         display: flex;
         flex-direction: column;
     }
-    .img_1{
-        width: 1920px;
-        height: 256px;
-    }
+    
+    .main{
+     display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 50%;
+   
+   }
+    
 
     </style>
 </head>
@@ -45,10 +50,20 @@ flex-direction: column;
 <div class="div_2">
     8-800-00000 СПБ  8-700-00000 МСК</div>
 </div>
-<section>
-    <img class="img_1" src="IMAGE.png" alt="pic1">
-</section>
-
 </header>
+<main class="main">
+   <div>
+    <img src="IMAGE1.png" alt="pic1">
+   </div> 
+   <div>
+    <img src="IMAGE2.png" alt="img2">
+   </div> 
+   <div>
+    <img src="IMAGE3.png" alt="img3">
+   </div> 
+   <div>
+    <img src="IMAGE4.png" alt="img4">
+   </div> 
+</main>
 </body>
 </html>
