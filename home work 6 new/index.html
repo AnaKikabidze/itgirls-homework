@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css" >
+    <style>
+    .header{
+    background: rgb(32, 30, 30);
+    grid-area: header;
+    }
+    .main {
+        background:rgb(32, 30, 30);
+        grid-area: main; }
+    .footer {
+        background: rgb(32, 30, 30);
+        grid-area: footer; 
+    }
+    .container{
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: 10% 1fr 10%;
+        height: 100vh;
+        grid-template-areas: 
+    "header header header header" 
+    "main main main main"
+    "footer footer footer footer"
+    }
+    .main_section{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    }
+    .nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid: column gap 10px; 
+    }  
+    .div_section{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-auto-rows: 1000px;
+        }
+        .section_1 {
+        color: antiquewhite;
+        display: grid;
+        grid-template-rows: 20% 2fr 1fr ; 
+        }
+        #picture{
+            height: 500px;
+        }
+        .menu{
+            text-decoration: none;
+            color: antiquewhite;
+        }
+        
+</style>
+</head>
+<body>
+    <div class="container">
+    <header class="header">
+        <div class="main_section">
+            <img  id="logo" src="Group 30.png" alt="logo">
+            <nav class="nav">
+                <a class="menu" href="directions.html">Home</a>
+                <a class="menu" href="about.html">About</a>
+                <a class="menu" href="contacts.html">Testimonials</a>
+                <a class="menu" href="blog.html">Blogs</a>
+            </nav>
+    </div>
+    </header>
+    <main class="main"> 
+        <div class="div_section">
+            <section class="section_1"> 
+                <div class="div_2">Mutual Funds</div>
+            <h1>Secure YourKids Future</h1>
+                <div class="div_3">Children’s fund is a form of mutual fund with specific child-related goals and terms. Commonly availed investments, solution-oriented plans for the rising cost of education.</div>
+            </section>
+            <section class="section2"> 
+                <img id="picture" src="image 7.png" alt="girlpicture"></section>
+        </div>
+    </main>
+    <footer class="footer"> 
+        <div class="footer_section">
+</footer>
+</div>
+
+</body>
+</html>
